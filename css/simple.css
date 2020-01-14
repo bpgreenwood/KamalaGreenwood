@@ -1,5 +1,4 @@
 body {
-font-family: sans-serif;
 background-image: url('../images/lotus.jpg');
 color: white;
 }
@@ -17,6 +16,7 @@ ul li {
  display: inline;
  margin-right: 10px;
  margin-left:10px;
+ font-family: "Lucida Console", monospace;
 }
 ul li a{
   color: white;
@@ -31,6 +31,7 @@ h1 {
   background-color: black;
   color: white;
   border-radius: 10px;
+  font-family: "Times New Roman", Times, serif;
 }
 article {
   float: left;
@@ -61,4 +62,52 @@ th, td {
   vertical-align: top;
   padding: 0.5em;
   text-align: left;
+}
+img {
+  border-radius: 10px;
+}
+p {
+  font-family: "Arial", serif;
+}
+
+.bob {
+  font-family: "Times New Roman", Times, serif;
+}
+#ab {
+  color:red;
+}
+#bb {
+  color:orange;
+}
+#cb {
+  color:green;
+}
+#db {
+  color:blue;
+}
+@keyframes rotatePicture {
+  0% {border-radius:20% 0%;}
+  50%{border-radius:0% 20%;}
+  100% {border-radius:20% 0%;}
+}
+#blob:hover {
+  animation-name: rotatePicture;
+  animation-duration:1s;
+  animation-iteration-count: infinite;
+}
+.box-blue {
+  position: absolute;
+  background: lightskyblue;
+  height: 100px;
+  width: 100px;
+  top: 77px;
+  left: 500px;
+}
+.box-orange {
+  position: absolute;
+  background: blue;
+  width: 100px;
+  height: 100px;
+  top: 85px;
+  left: 495px;
 }
